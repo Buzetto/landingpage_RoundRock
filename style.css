@@ -74,11 +74,23 @@
     gap: 40px;
 }
 
-.primeira-secao h2 {
+.title-container {
+    position: relative;
+    display: inline-block;
+}
+  
+.title-container h2 {
     color: var(--section-title);
     font-size: 50px;
     font-weight: 700;
     position: relative;
+}
+  
+.title-container img {
+    position: absolute;
+    bottom: -50px;
+    right: 135px;
+    width: 90px;
 }
 
 .container-cards {
