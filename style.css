@@ -4,6 +4,7 @@
     --green-button: #48924F;
     --green-texto: #0D4D14;
     --white: #FFFFFF;
+    --section-title: #828282;
 }
 
 * {
@@ -47,7 +48,7 @@
     text-align: center;
 }
 
-.principal button {
+.button {
     color: var(--green-button);
     background-color: var(--white);
     font-weight: 700;
@@ -55,4 +56,57 @@
     border-radius: 30px;
     padding: 15px 40px;
     margin-bottom: 100px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
+}
+
+.button:hover {
+    color: var(--white);
+    background-color: var(--green-button);
+    cursor: pointer;
+}
+
+.primeira-secao {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.primeira-secao h2 {
+    color: var(--section-title);
+    font-size: 50px;
+    font-weight: 700;
+    position: relative;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.cards { 
+    width: 300px; 
+    min-height: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .15);
+}
+
+.cards h3 {
+    font-weight: 800;
+    font-size: 16px;
+    color: var(--green-texto);
+    margin: 20px 20px 0px 20px;
+}
+
+.cards p {
+    font-size: 14px;
+    color: var(--green-texto);
+    margin: 20px 20px 20px 20px;
 }
