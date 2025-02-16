@@ -1,6 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --green-button: #48924F;
+    --green-texto: #0D4D14;
+    --white: #FFFFFF;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: "Poppins", serif;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    background-image: url("assets/background_principal.png");
+    background-repeat: no-repeat;
+}
+
+.principal img {
+    width: 500px;
+    height: 80px;
+    margin-top: 20px;
+}
+
+.principal p {
+    font-weight: medium;
+    background: rgba(0, 0, 0, .5);
+    color: var(--white);
+    padding: 20px 60px;
+    border-radius: 30px;
+}
+
+.principal h1 {
+    font-weight: 700;
+    color: var(--white);
+    font-size: 130px;
+    line-height: 134px;
+    text-align: center;
+}
+
+.principal button {
+    color: var(--green-button);
+    background-color: var(--white);
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 40px;
+    margin-bottom: 100px;
 }
