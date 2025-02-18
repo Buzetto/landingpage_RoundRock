@@ -1,340 +1,361 @@
 /*Importando fonte do Google*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /*Declaração de Variáveis*/
 :root {
-    --green-button: #48924F;
-    --green-texto: #0D4D14;
-    --white: #FFFFFF;
-    --section-title: #828282;
+  --green-button: #48924f;
+  --green-texto: #0d4d14;
+  --white: #ffffff;
+  --section-title: #828282;
 }
 
 /*CSS Reset*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: "Poppins", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", serif;
 }
 
 /*Main*/
 .principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    width: 100%;
-    background-image: url("assets/background_principal.png");
-    background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  background-image: url("assets/background_principal.png");
+  background-repeat: no-repeat;
 }
 
 .principal img {
-    width: 500px;
-    height: 80px;
-    margin-top: 20px;
+  width: 500px;
+  height: 80px;
+  margin-top: 20px;
 }
 
 .principal p {
-    font-weight: medium;
-    background: rgba(0, 0, 0, .5);
-    color: var(--white);
-    padding: 20px 60px;
-    border-radius: 30px;
+  font-weight: medium;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--white);
+  padding: 20px 60px;
+  border-radius: 30px;
 }
 
 .principal h1 {
-    font-weight: 700;
-    color: var(--white);
-    font-size: 130px;
-    line-height: 134px;
-    text-align: center;
+  font-weight: 700;
+  color: var(--white);
+  font-size: 130px;
+  line-height: 134px;
+  text-align: center;
 }
 
 .button {
-    color: var(--green-button);
-    background-color: var(--white);
-    font-weight: 700;
-    border: none;
-    border-radius: 30px;
-    padding: 15px 40px;
-    margin-bottom: 100px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
+  color: var(--green-button);
+  background-color: var(--white);
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 40px;
+  margin-bottom: 100px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
 .button:hover {
-    color: var(--white);
-    background-color: var(--green-button);
-    cursor: pointer;
+  color: var(--white);
+  background-color: var(--green-button);
+  cursor: pointer;
 }
 
 /*Seção 1*/
 .primeira-sessao {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
 }
 
 .title-container {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
-  
+
 .title-container h2 {
-    color: var(--section-title);
-    font-size: 50px;
-    font-weight: 700;
-    position: relative;
+  color: var(--section-title);
+  font-size: 50px;
+  font-weight: 700;
+  position: relative;
 }
-  
+
 .title-container img {
-    position: absolute;
-    bottom: -50px;
-    right: 135px;
-    width: 90px;
+  position: absolute;
+  bottom: -50px;
+  right: 135px;
+  width: 90px;
 }
 
 .container-cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
 }
 
-.cards { 
-    width: 300px; 
-    min-height: 400px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: var(--white);
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, .15);
+.cards {
+  width: 300px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 .cards h3 {
-    font-weight: 800;
-    font-size: 16px;
-    color: var(--green-texto);
-    margin: 20px 20px 0px 20px;
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--green-texto);
+  margin: 20px 20px 0px 20px;
 }
 
 .cards p {
-    font-size: 14px;
-    color: var(--green-texto);
-    margin: 20px 20px 20px 20px;
+  font-size: 14px;
+  color: var(--green-texto);
+  margin: 20px 20px 20px 20px;
 }
 
 /*Seção 2*/
-.segunda-sessao { 
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
+.segunda-sessao {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
 }
 
 .title-container-2 {
-    margin-top: -60px;
-    position: relative;
-    display: inline-block;
+  margin-top: -60px;
+  position: relative;
+  display: inline-block;
 }
 
 .title-container-2 h2 {
-    color: var(--section-title);
-    font-size: 50px;
-    font-weight: 700;
-    position: relative;
+  color: var(--section-title);
+  font-size: 50px;
+  font-weight: 700;
+  position: relative;
 }
 
 .title-container-2 img {
-    position: absolute;
-    bottom: -50px;
-    right: -50px;
-    width: 90px;
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 90px;
 }
 
 .container-cards-2 {
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    background-image: url(/assets/background-escuro.png);
-    padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  background-image: url(/assets/background-escuro.png);
+  padding: 100px;
 }
 
 .cards-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .cards-2 p {
-    font-size: 18px;
-    color: var(--white);
-    text-align: center;
+  font-size: 18px;
+  color: var(--white);
+  text-align: center;
 }
 
 /*Seção 3*/
 .terceira-sessao {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .terceira-sessao h2 {
-    color: var(--section-title);
-    font-size: 50px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 100px;
+  color: var(--section-title);
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 100px;
 }
 
 .testimonial-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
-    max-width: 900px;
-    margin: 0 auto;
-    justify-content: center; 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .testimonial-card {
-    display: flex;
-    align-items: start;
-    background: white;
-    border: 2px solid #4CAF50;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+  display: flex;
+  align-items: start;
+  background: white;
+  border: 2px solid #4caf50;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
 }
 
 .profile-pic {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-right: 15px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
 }
 
 .testimonial-content {
-    flex: 1;
-    margin-left: 10px;
+  flex: 1;
+  margin-left: 10px;
 }
 
 .testimonial-content h3 {
-    color: var(--green-texto);
+  color: var(--green-texto);
 }
 
 .testimonial-content p {
-    color: var(--green-button);
+  color: var(--green-button);
 }
 
 .stars {
-    font-size: 18px;
-    margin-top: 5px;
+  font-size: 18px;
+  margin-top: 5px;
 }
 
 /*Footer*/
 footer {
-    margin-top: 60px;
-    background-color: var(--green-texto);
-    padding: 30px;
+  margin-top: 60px;
+  background-color: var(--green-texto);
+  padding: 30px;
 }
 
 footer p {
-    text-align: center;
-    color: var(--white);
-    letter-spacing: 5px;
-    font-weight: 300;
-    font-size: 14px;
+  text-align: center;
+  color: var(--white);
+  letter-spacing: 5px;
+  font-weight: 300;
+  font-size: 14px;
 }
 
 /*Responsivo para maioria dos celulares*/
 @media (max-width: 768px) {
-    .principal {
-        padding: 40px 20px;
-    }
-    
-    .principal img {
-        width: 300px;
-        height: auto;
-    }
-    
-    .principal h1 {
-        font-size: 50px;
-        line-height: 60px;
-    }
-    
-    .button {
-        padding: 12px 30px;
-        font-size: 16px;
-    }
-    
-    .title-container h2, .title-container-2 h2, .terceira-sessao h2 {
-        font-size: 36px;
-        text-align: center;
-    }
-    
-    .title-container img, .title-container-2 img {
-        width: 60px;
-        bottom: -30px;
-        right: 50px;
-    }
-    
-    .container-cards, .container-cards-2, .testimonial-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .cards, .cards-2, .testimonial-card {
-        width: 100%;
-        padding: 20px;
-    }
+  .principal {
+    padding: 40px 20px;
+  }
+
+  .principal img {
+    width: 300px;
+    height: auto;
+  }
+
+  .principal h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .button {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+
+  .title-container h2,
+  .title-container-2 h2,
+  .terceira-sessao h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .title-container img,
+  .title-container-2 img {
+    width: 60px;
+    bottom: -30px;
+    right: 50px;
+  }
+
+  .container-cards,
+  .container-cards-2,
+  .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards,
+  .cards-2,
+  .testimonial-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .grass {
+    display: none;
+  }
 }
 
 /*Responsivo para celualares menores*/
 @media (max-width: 480px) {
-    .principal h1 {
-        font-size: 40px;
-        line-height: 50px;
-    }
-    
-    .title-container img, .title-container-2 img {
-        width: 50px;
-        bottom: -20px;
-        right: 30px;
-    }
-    
-    .cards, .cards-2 {
-        padding: 15px;
-    }
-    
-    .testimonial-card {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .testimonial-content {
-        text-align: center;
-    }
+  .principal h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .title-container img,
+  .title-container-2 img {
+    width: 50px;
+    bottom: -20px;
+    right: 30px;
+  }
+
+  .cards,
+  .cards-2 {
+    padding: 15px;
+  }
+
+  .testimonial-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-content {
+    text-align: center;
+  }
+
+  .grass {
+    display: none;
+  }
 }
 
 /*Responsivo para tablets ou iPads*/
 @media (max-width: 1024px) {
-    .principal h1 {
-        font-size: 80px;
-        line-height: 90px;
-    }
-    
-    .container-cards, .container-cards-2, .testimonial-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .cards, .cards-2, .testimonial-card {
-        width: 90%;
-    }
+  .principal h1 {
+    font-size: 80px;
+    line-height: 90px;
+  }
+
+  .container-cards,
+  .container-cards-2,
+  .testimonial-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards,
+  .cards-2,
+  .testimonial-card {
+    width: 90%;
+  }
 }
