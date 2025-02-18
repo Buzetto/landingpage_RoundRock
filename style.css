@@ -246,7 +246,95 @@ footer {
 footer p {
     text-align: center;
     color: var(--white);
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     font-weight: 300;
     font-size: 14px;
+}
+
+/*Responsivo para maioria dos celulares*/
+@media (max-width: 768px) {
+    .principal {
+        padding: 40px 20px;
+    }
+    
+    .principal img {
+        width: 300px;
+        height: auto;
+    }
+    
+    .principal h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    
+    .button {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+    
+    .title-container h2, .title-container-2 h2, .terceira-sessao h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    .title-container img, .title-container-2 img {
+        width: 60px;
+        bottom: -30px;
+        right: 50px;
+    }
+    
+    .container-cards, .container-cards-2, .testimonial-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cards, .cards-2, .testimonial-card {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/*Responsivo para celualares menores*/
+@media (max-width: 480px) {
+    .principal h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    
+    .title-container img, .title-container-2 img {
+        width: 50px;
+        bottom: -20px;
+        right: 30px;
+    }
+    
+    .cards, .cards-2 {
+        padding: 15px;
+    }
+    
+    .testimonial-card {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .testimonial-content {
+        text-align: center;
+    }
+}
+
+/*Responsivo para tablets ou iPads*/
+@media (max-width: 1024px) {
+    .principal h1 {
+        font-size: 80px;
+        line-height: 90px;
+    }
+    
+    .container-cards, .container-cards-2, .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cards, .cards-2, .testimonial-card {
+        width: 90%;
+    }
 }
